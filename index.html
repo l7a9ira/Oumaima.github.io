@@ -1,240 +1,292 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Portfolio | Oumaima</title>
-  <meta name="description" content="Academic AI portfolio showcasing machine learning, algorithms, and explainable AI projects." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oumaima | AI Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- Top Navigation -->
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">
-        <span class="dot"></span>
-        <span class="brand-text">Oumaima • AI Portfolio</span>
-      </div>
 
-      <nav class="links">
-        Projects
-        Skills
-        Impact
-        Contact
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="#hero" class="logo">Oumaima<span> Ben M'hamed</span></a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
-    </div>
-
-    <div class="mobile-menu" id="mobileMenu">
-      Projects
-      Skills
-      Impact
-      Contact
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <p class="tag">Master’s in AI • Portfolio</p >
-        <h1>Explainable, academic AI projects with strong mathematical foundations.</h1>
-        <p class="subtitle">
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+
+    <div class="container">
+      <div class="hero-content reveal">
+        <h1 class="hero-title">Hi, I'm <span>Oumaima Ben M'hamed</span></h1>
+        <h3 class="hero-subtitle">Future AI Engineer & Applied Math Enthusiast</h3>
+
+        <p class="hero-description">
           Mathematics & Computer Science graduate preparing for a Master’s in Artificial Intelligence.
-          Interests: Machine Learning foundations, Explainable AI, algorithms, and healthcare applications.
-        </p >
+          I build academic-style ML projects focused on clarity, reproducibility, and real-world impact.
+        </p>
 
-        <div class="cta-row">
-          <a class="btn primary" href="#projects">View Projects</a >
-          <a class="btn ghost" href="#contact">Contact</a >
-        </div>
+        <a href="#projects" class="btn">View My Work</a>
 
-        <div class="mini">
-          <div class="mini-item">
-            <div class="mini-num">3</div>
-            <div class="mini-label">Core Projects</div>
-          </div>
-          <div class="mini-item">
-<div class="mini-num">3</div>
-            <div class="mini-label">Core Projects</div>
-          </div>
-          <div class="mini-item">
-            <div class="mini-num">XAI</div>
-            <div class="mini-label">Explainability Focus</div>
-          </div>
-          <div class="mini-item">
-            <div class="mini-num">ML</div>
-            <div class="mini-label">Foundations + Practice</div>
-          </div>
+        <div class="social-icons">
+          <a href="https://github.com/l7a9ira" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/oumaima-ben-m-hmed-7456a1212/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/oumaima01288945" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/benmhmedoumaima?igsh=d2EzcG5tY2Iyd2di" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
+    </div>
 
-      <div class="card">
-        <h2 class="card-title">Quick Profile</h2>
-        <ul class="card-list">
-          <li><span class="k">Field:</span> Artificial Intelligence</li>
-          <li><span class="k">Background:</span> Mathematics & CS</li>
-          <li><span class="k">Strength:</span> Clear, reproducible experiments</li>
-          <li><span class="k">Focus:</span> Healthcare & social impact</li>
-        </ul>
+    <!-- Scroll down indicator -->
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
 
-        <div class="divider"></div>
+  <!-- About Section -->
+  <section id="about">
+    <div class="container reveal">
+      <h2 class="section-title">About Me</h2>
 
-        <p class="small">
-          This portfolio is designed for academic review: clean code, documented methodology, and results.
-        </p >
+      <div class="about-content">
+        <div class="about-info">
+          <p>
+            I am a Mathematics and Computer Science graduate preparing for a Master’s degree in Artificial Intelligence.
+            My interest lies in Machine Learning foundations, Explainable AI, and building systems that help people.
+          </p>
+
+          <p>
+            I also explore freelance software development and enjoy turning ideas into well-structured, real solutions.
+            I focus on quality, academic clarity, and continuous learning.
+          </p>
+
+          <a href="cv/myCV.pdf" class="btn">Download CV</a>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills">
+          <h3>My Skills</h3>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Python / ML</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>Data Analysis</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>HTML/CSS</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-name">
+              <span>JavaScript</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="section" id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <p class="section-sub">
-        Selected projects written in a university-style format: methodology, evaluation, and interpretation.
-      </p >
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container reveal">
+      <h2 class="section-title">My Projects</h2>
 
-      <div class="grid">
+      <div class="projects-grid">
+
         <!-- Project 1 -->
-        <article class="project">
-          <div class="project-top">
-            <h3>Linear & Logistic Regression from Scratch</h3>
-            <span class="pill">Foundations</span>
+        <div class="project-card">
+          <div class="project-banner">
+            <i class="fas fa-chart-line"></i>
           </div>
-          <p>
-            Implemented gradient descent training from first principles using NumPy.
-            Includes loss curves, regression fit visualization, and a logistic decision boundary.
-          </p >
-          <ul class="bullets">
-            <li>MSE & cross-entropy</li>
-            <li>Gradient descent</li>
-            <li>Interpretation of convergence</li>
-                  <li>Interpretation of convergence</li>
-          </ul>
-          <div class="actions">
-            <a class="btn small primary" target="_blank"
-               href=" ">Repository</a >
+
+          <div class="project-info">
+            <h3 class="project-title">Linear & Logistic Regression From Scratch</h3>
+            <p>
+              Implemented regression models using NumPy only, with gradient descent and visual analysis.
+              Designed as an academic portfolio project.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-btn"><i class="fas fa-link"></i> Live</a>
+              <a href="#" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
-        </article>
+        </div>
+
         <!-- Project 2 -->
-        <article class="project">
-          <div class="project-top">
-            <h3>Time Complexity: Sorting Algorithms</h3>
-            <span class="pill">Algorithms</span>
+        <div class="project-card">
+          <div class="project-banner">
+            <i class="fas fa-sort-amount-up"></i>
           </div>
-          <p>
-            Implemented Bubble, Insertion, and Merge sort from scratch. Benchmarked runtime across input sizes,
-            repeated trials, and visualized empirical growth vs Big-O theory.
-          </p >
-          <ul class="bullets">
-            <li>Fair timing experiments</li>
-            <li>Mean ± std reporting</li>
-            <li>O(n²) vs O(n log n)</li>
-          </ul>
-          <div class="actions">
-            <a class="btn small primary" target="_blank"
-               href=" ">Repository</a >
+
+          <div class="project-info">
+            <h3 class="project-title">Sorting Algorithms Time Complexity</h3>
+            <p>
+              Implemented Bubble, Insertion, and Merge sort from scratch and analyzed empirical runtime vs Big-O theory.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">Matplotlib</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-btn"><i class="fas fa-link"></i> Live</a>
+              <a href="#" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
-        </article>
+        </div>
+
         <!-- Project 3 -->
-        <article class="project">
-          <div class="project-top">
-            <h3>Explainable AI: Early Health Risk Prediction</h3>
-            <span class="pill">XAI + Healthcare</span>
+        <div class="project-card">
+          <div class="project-banner">
+            <i class="fas fa-heartbeat"></i>
           </div>
-          <p>
-            Built an interpretable ML pipeline (Logistic Regression) for diabetes risk prediction.
-            Focus on explainability through coefficients and clinical interpretation of features.
-          </p >
-          <ul class="bullets">
-            <li>Data cleaning + imputation</li>
-            <li>Accuracy, precision, recall</li>
-            <li>Feature importance (coefficients)</li>
-          </ul>
-          <div class="actions">
-            <a class="btn small primary" target="_blank"
-               href=" ">Repository</a >
+
+          <div class="project-info">
+            <h3 class="project-title">Explainable AI for Health Risk Prediction</h3>
+            <p>
+              Built an interpretable ML pipeline for diabetes risk prediction with strong focus on explainability.
+            </p>
+
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Sklearn</span>
+              <span class="tech-tag">XAI</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#" class="project-btn"><i class="fas fa-link"></i> Live</a>
+              <a href="#" class="project-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
-        </article>
-      </div>
-    </div>
-  </section>
-    <!-- Skills -->
-  <section class="section alt" id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <p class="section-sub">Tools and competencies demonstrated across projects.</p >
-
-      <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">NumPy</div>
-        <div class="skill">pandas</div>
-        <div class="skill">scikit-learn</div>
-        <div class="skill">matplotlib</div>
-        <div class="skill">Optimization</div>
-        <div class="skill">Big-O Analysis</div>
-        <div class="skill">Explainable AI</div>
-        <div class="skill">Experiment Design</div>
-      </div>
-    </div>
-  </section>
-    <!-- Impact -->
-  <section class="section" id="impact">
-    <div class="container">
-      <h2>Why these projects matter</h2>
-      <div class="impact">
-        <div class="impact-card">
-          <h3>Academic readiness</h3>
-          <p>
-            Each project is written with clear methodology, reproducible experiments, and structured reporting —
-            aligned with Master’s-level expectations.
-          </p >
         </div>
-        <div class="impact-card">
-          <h3>Healthcare & aging</h3>
-          <p>
-            Explainable health risk prediction supports early screening, prevention, and patient education —
-            important for aging populations and chronic disease management.
-          </p >
-        </div>
-        <div class="impact-card">
-          <h3>Responsible AI</h3>
-          <p>
-            Interpretability improves trust and helps detect errors, bias, and unrealistic correlations —
-            essential when AI is used in sensitive domains.
-          </p >
-        </div>
+
       </div>
     </div>
   </section>
-    <!-- Contact -->
-  <section class="section alt" id="contact">
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container reveal">
+      <h2 class="section-title">Get In Touch</h2>
+
+      <div class="contact-content">
+        <form class="contact-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Subject" required>
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Your Message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p>China</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>oumaimabenmhmed@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-text">
+              <h4>Phone</h4>
+              <p>+86 188 4084 0639</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
     <div class="container">
-      <h2>Contact</h2>
-      <p class="section-sub">Replace these with your real links.</p >
-
-      <div class="contact">
-        <a class="contact-item" target="_blank" href=" ">
-          GitHub
-        </a >
-        <a class="contact-item" href="mailto:your.email@example.com">
-          Email
-        </a >
-        <a class="contact-item" target="_blank" href="https://www.linkedin.com/">
-          LinkedIn
-        </a >
+      <div class="footer-content">
+        <div class="footer-social">
+          <a href="https://github.com/l7a9ira"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/oumaima01288945"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/benmhmedoumaima?igsh=d2EzcG5tY2Iyd2di"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="footer-text">&copy; 2026 Oumaima. All rights reserved.</p>
       </div>
-
-      <p class="footer">
-        © <span id="year"></span> Oumaima — AI Portfolio
-      </p >
     </div>
-  </section>
+  </footer>
 
-  <script src="script.js"></script>
+  <!-- JS -->
+  <script src="js/script.js"></script>
 </body>
 </html>
-
